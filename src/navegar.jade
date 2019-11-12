@@ -1,0 +1,25 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+	a.navbar-brand(href='#')
+		i.fas.fa-sun.fa-2x.mr-2
+		| Engenhoca Sonhonhoca Opus 13
+	button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+		span.navbar-toggler-icon
+	.collapse.navbar-collapse#navbarSupportedContent
+		ul.navbar-nav.mr-auto
+			li.nav-item.active
+				a.nav-link(href='#')
+					| Horror Vacui 
+					span.sr-only (current)
+			li.nav-item.dropdown
+				a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').
+					
+					Lista Suspensa
+					
+				.dropdown-menu(aria-labelledby='navbarDropdown')
+					a.dropdown-item(href='#') Ação
+					a.dropdown-item(href='#') Reação
+					.dropdown-divider
+					a.dropdown-item(href='#') Interação
+		form.form-inline.my-2.my-lg-0
+			input.form-control.mr-sm-2(type='search' placeholder='Achar alguém' aria-label='Search')
+			button.btn.btn-dark.my-2.my-sm-0(type='submit') Pesquisar

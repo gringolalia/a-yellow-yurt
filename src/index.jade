@@ -2,14 +2,27 @@ extends _layouts/base
 
 include _modules/link/link
 
+include navegar
+
 block content
-  .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p.
-        Take a look at the
-        #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-        and start mixing up something awesome.
-      p
-        img.logo(src="images/yeogurt-swirl.png", width="75px")
-  code.version v2.0.1
+  include navegar
+  .container-fluid
+    .row.align-items-center(style="height: calc(100vh - 85px")
+      .col-sm
+        h4
+          i.fas.fa-wifi.fa-5x
+        h2 Addio Mondo Crudele
+        button.btn.btn-dark(type='button') Imprint
+        img.logo.ml-5(src="images/yeogurt-swirl.png", width="75px")
+      .col-sm
+        h4
+          i.fas.fa-wifi.fa-5x
+        h2 Addio Mondo Crudele
+        button.btn.btn-dark(type='button') Imprint
+        img.logo.ml-5(src="images/yeogurt-swirl.png", width="75px")      
+      .col-sm
+        h4
+          i.fas.fa-wifi.fa-5x
+        h2 Addio Mondo Crudele
+        button.btn.btn-dark(type='button') Imprint
+        img.logo.ml-5(src="images/yeogurt-swirl.png", width="75px")

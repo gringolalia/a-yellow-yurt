@@ -1,4 +1,4 @@
-# A Yellow Yurt readme
+# A Yellow Yurt
 
 Generated on 2019-11-08 using
 [generator-yeogurt@2.0.1](https://github.com/larsonjj/generator-yeogurt)

@@ -1,29 +1,70 @@
-//- Custom Configuration
 block config
-  //- Setup site's base URL to match the "baseUrl" key within `package.json`
-  //- Otherwise default to relative pathing
-  - var baseUrl = config.baseUrl || './'
+	//- Setup site's base URL to match the "baseUrl" key within `package.json`
+	//- Otherwise default to relative pathing
+	//- - var baseUrl = config.baseUrl || './'
 
 doctype html
 <html class='no-js' lang='en'>
 
 head
-  meta(charset='utf-8')
-  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-  title A Yellow Yurt
-  meta(name='description', content= 'A new Yeogurt application')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  block stylesheets
-    link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+	title The Yellow Yurt
+	meta(name='description', content= 'Daemonite-Yeogurt Together at Last')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	block stylesheets
+		link(rel='stylesheet', href='../styles/main.css')
+		//- link(rel='stylesheet', href='../_styles/daemonite/css/daemonite.css')
+		//- link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/daemonite-material@4.1.1/css/material.css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=News+Cycle|Material+Icons')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
+
+	style.
+		
+		body, html {
+			font-family: 'News Cycle', sans-serif;
+			font-weight: 300 !important;
+			font-style: normal !important;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'News Cycle', sans-serif;
+			font-weight: 300 !important;
+			font-style: normal !important;
+		}
+
+		.dignity {
+			font-family: 'News Cycle', sans-serif;
+			font-weight: 300 !important;
+			font-style: normal !important;
+		}
+
+		i, .material-icons {
+			vertical-align: middle;
+		}
+
+		a.navbar-brand {
+			color: black;
+		}
+
+		a.dropdown-item {
+		color: black;
+		}
+
+		.container, .container-fluid {
+			min-height: 100vh;
+			min-width: 100vh;
+		}
 
 body
-  <!--[if lt IE 11]>
-  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-  block content
+	block content
 
-  block scripts
-    script(src= baseUrl + 'scripts/main.js')
 
+	block scripts
+		//- script(src= baseUrl + 'scripts/main.js')
+		script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+		script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+		script(src='../_styles/daemonite/js/material.min.js')
 </html>
