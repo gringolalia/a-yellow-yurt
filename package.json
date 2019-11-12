@@ -6,23 +6,6 @@
     "gulp-gh-pages": "^0.5.4",
     "jquery": "^3.4.1",
     "normalize.css": "~5.0.0"
-    // "gulp-changed": "~2.0.0",
-    // "gulp-cssnano": "~2.1.2",
-    // "gulp-data": "~1.2.1",
-    // "gulp-eslint": "~3.0.1",
-    // "gulp-htmlmin": "~3.0.0",
-    // "gulp-if": "~2.0.2",
-    // "gulp-imagemin": "~3.1.1",
-    // "gulp-jade": "~1.1.0",
-    // "gulp-load-plugins": "~1.5.0",
-    // "gulp-notify": "~3.0.0",
-    // "gulp-plumber": "~1.1.0",
-    // "gulp-postcss": "~6.3.0",
-    // "gulp-rename": "~1.2.2",
-    // "gulp-sourcemaps": "~2.4.1",
-    // "gulp-stylus": "~2.6.0",
-    // "gulp-uglify": "~2.0.1",
-    // "gulp-util": "~3.0.8"
   },
   "devDependencies": {
     "autoprefixer": "~6.7.5",
