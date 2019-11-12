@@ -27,6 +27,9 @@ var taskTarget = args.production ? dirs.destination : dirs.temporary;
 // Create a new browserSync instance
 var browserSync = browserSyncLib.create();
 
+var gulp        = require('gulp');
+var deploy      = require('gulp-gh-pages');
+
 // This will grab all js in the `gulp` directory
 // in order to load all gulp tasks
 glob.sync('./gulp/**/*.js').filter(function(file) {
@@ -59,6 +62,11 @@ gulp.task('serve', [
   'browserSync',
   'watch'
 ]);
+
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 
 // Testing
 gulp.task('test', ['eslint']);

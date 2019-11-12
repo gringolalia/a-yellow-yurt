@@ -4,3 +4,6 @@ build
 tmp
 .grunt
 .DS_Store
+
+# Local Netlify folder
+.netlify
