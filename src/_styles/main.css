@@ -5,11 +5,10 @@
 @import '../_modules/link/link';
 
 /* @import './custom.scss'; */
-@import './daemonite/css/material.css'
+/* @import './daemonite/css/material.css'; */
 
+@import './daemonite/css/material.css';
 
-// Box sizing partial styles
-// Apply a natural box layout model to all elements
 *,
 *:before,
 *:after
