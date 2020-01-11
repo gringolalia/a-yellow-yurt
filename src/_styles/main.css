@@ -4,8 +4,7 @@
 // Import Modules
 @import '../_modules/link/link';
 
-/* @import './custom.scss'; */
-/* @import './daemonite/css/material.css'; */
+@import './custom.scss';
 
 @import './daemonite/css/material.css';
 
